@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500;600;700&display=swap');
+
+.Intro__container{
+	--color-light: #eeeeee;
+    --color-normal: #4ecca3;
+	--color-mid: #393e46;
+	--color-spec: #f67551;
+	--color-dark: #232931;
+    background-color: var(--color-mid);
+    max-width: 900px;
+    width: 80vw;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.Intro__texts{
+    display: inline-block;
+    width: auto;
+    text-align: start;
+    padding: 0 20px;
+    font-weight: 500;
+    color: var(--color-light);
+    font-family: 'Noto Serif JP', serif;
+}
+
+.Intro__title{
+    padding: 10px;
+    margin: 0;
+    display: inline-block;
+    width: auto;
+    font-size: 32px;
+    position: relative;
+}
+
+
+.quote{
+    display: block;
+    margin: 12px auto;
+    background-color: var(--color-spec);
+    padding: 10px;
+    width: 85%;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.Intro__link{
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+    display: block;
+    padding: 10px;
+    background-color: var(--color-normal);
+    width: 200px;
+    text-align: center;
+    position: absolute;
+    border-radius: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-mid);
+    right: 0;
+    bottom: -100px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: .2s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Intro__link:hover{
+    transform: translateX(2px);
+    color: var(--color-light);
+}
+
+
+.Intro__texts::-webkit-scrollbar{
+        width: 8px;
+    }
+    
+.Intro__texts::-webkit-scrollbar-thumb{
+    background-color: var(--color-light);
+    border-radius: 20px;
+}
+
+@media(max-width:800px){
+    .Intro__texts{
+        font-size: 14px;
+    }
+
+    .Intro__title{
+        font-size: 22px;
+    }
+
+    .Intro__link{
+        margin: 20px auto;
+        margin-top: 30px;
+        display: block;
+        position:initial;
+    }
+}
